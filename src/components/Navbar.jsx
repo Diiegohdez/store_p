@@ -13,7 +13,7 @@ import { FaCartPlus, FaSearch, FaWindowClose } from 'react-icons/fa';
 
       const [active, setActive] = useState(false);
 
-      const onDeleteProduct = item =>{
+      const onDeleteProduct = item => {
         const result = allProducts.filter(
           productos => productos.id !== item.id
         );
