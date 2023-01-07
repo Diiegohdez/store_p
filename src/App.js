@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './App.css';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import {Navbar} from './components/Navbar';
 import {Products} from './components/Products';
 
@@ -24,6 +26,9 @@ function App() {
           setTotal={setTotal}
           countProducts={countProducts}
           setCountProducts={setCountProducts}/>
+
+      <Contact/>
+      <Footer/>
     </>
   );
 }

@@ -33,7 +33,7 @@ import { FaCartPlus, FaSearch, FaWindowClose } from 'react-icons/fa';
     <div className='nav'>
       <img src='https://i.ibb.co/dpYvgRq/BackPack.png' alt='logo' className='navbar-logo'/>
         <div className='container-search'>
-        <input type='text'  placeholder='Buscar por Nombre o Precio' className='search'/>
+        <input type='text'  placeholder='Buscar Producto' className='search'/>
         <FaSearch className='ico-search'/>
       </div>
       <div className='container-ico'>
@@ -64,7 +64,7 @@ import { FaCartPlus, FaSearch, FaWindowClose } from 'react-icons/fa';
                     </div>
                   ))}
                 </div>
-                <div className='cart.total'>
+                <div className='cart_total'>
                   <h3>Total:</h3>
                   <span className='total-pagar'>$ {total}</span>
                 </div>

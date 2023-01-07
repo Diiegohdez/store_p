@@ -67,3 +67,10 @@
     transform: scale(1.01);
 
 }
+
+@media only screen and (max-width: 412px) {
+    .container-items{
+        display: grid;
+	    grid-template-columns: repeat(1, 1fr);
+    }
+}
