@@ -9,7 +9,10 @@ import { FaCartPlus, FaSearch, FaWindowClose } from 'react-icons/fa';
     total,
     setTotal,
     countProducts,
-    setCountProducts }) => {
+    setCountProducts,
+    resultadoP,
+    searchP,
+    searchProduct }) => {
 
       const [active, setActive] = useState(false);
 
@@ -33,7 +36,7 @@ import { FaCartPlus, FaSearch, FaWindowClose } from 'react-icons/fa';
     <div className='nav'>
       <img src='https://i.ibb.co/dpYvgRq/BackPack.png' alt='logo' className='navbar-logo'/>
         <div className='container-search'>
-        <input type='text'  placeholder='Buscar Producto' className='search'/>
+        <input type='text' value={searchProduct}  placeholder='Buscar Producto' className='search' onChange={searchP}/>
         <FaSearch className='ico-search'/>
       </div>
       <div className='container-ico'>

@@ -1,4 +1,4 @@
-import { useProducts } from "../hooks/useProducts";
+//import { useProducts } from "../hooks/useProducts";
 import React from 'react';
 import './products.css';
 
@@ -8,9 +8,10 @@ export const Products = ({
 	countProducts,
 	setCountProducts,
 	total,
-	setTotal,}) => {
+	setTotal,
+    resultadoP,}) => {
 
-    const {product} = useProducts();
+    //const {product} = useProducts();
     
 
     const onAddProduct = item => {
@@ -33,7 +34,7 @@ export const Products = ({
     <div className="container-product">
         <h1 className='producTitle'>Nuestro Productos !</h1>
         <div className="container-items">
-            {product.map(item=>(
+            {resultadoP.map(item=>(
             <div className="item" key={item.id}>
                 <figure>
                     <img src={item.img} alt={item.name} width="100%"/>

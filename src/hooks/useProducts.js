@@ -5,6 +5,8 @@ export const useProducts = () => {
     //informacion de la api
     const [product, setProduct] = useState([]);
 
+    const [searchProduct, setSearchProduct] = useState("");
+
     useEffect(()=>{
         getProducts();
     },[])
@@ -19,9 +21,27 @@ export const useProducts = () => {
         })
     }
 
+    /*Filtra Informacion*/
+    const searchP = (e) =>{
+        setSearchProduct(e.target.value)
+    }
+    let resultadoP = []
+    if(!searchProduct)
+        {
+            resultadoP = product
+        }else{
+            resultadoP = product.filter((dato)=>
+            dato.name.toLowerCase().includes(searchProduct.toLocaleLowerCase())
+            || dato.price.toLowerCase().includes(searchProduct.toLocaleLowerCase())
+            )
+        }
+
 
 
   return {
-    product
+    product,
+    searchP,
+    resultadoP,
+    searchProduct
   }
 }
