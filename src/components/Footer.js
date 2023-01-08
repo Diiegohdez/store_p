@@ -13,7 +13,8 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footerBottom'>
-                <p>© 2023 Astral Colombia | | Todos los derechos reservados. Astral Colombia S.A.S</p>
+                <p>© 2023 Astral Colombia | | Todos los derechos reservados. </p>
+                <p>Astral Colombia S.A.S</p>
             </div>
         </div>
     </div>

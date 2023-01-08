@@ -33,6 +33,16 @@
 
 @media only screen and (max-width: 412px) {
     .footerContainer{
-        height: 130px;
+        height: 100px;
+        margin-top: 50px;
+    }
+
+    .footerTop{
+        font-size: 12px;
+    }
+
+    .footerBottom{
+        font-size: 12px;
+        flex-direction: column;
     }
 }
